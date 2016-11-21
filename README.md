@@ -1,4 +1,4 @@
-# ipython-tutorial-VA2015
+# ipython-tutorial-VA2016/17
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/sgratzl/ipython-tutorial-VA2015)
 
