@@ -1,4 +1,5 @@
 #python dependencies
+altair
 ipywidgets
 matplotlib
 notebook
@@ -8,3 +9,4 @@ plotly
 scikit-learn
 scipy
 seaborn
+vega_datasets
