@@ -1,5 +1,11 @@
 #python dependencies
+ipywidgets
+jupyterlab
+matplotlib
+nodejs
 numpy
 pandas
+plotly
+scikit-learn
+scipy
 seaborn
-sklearn

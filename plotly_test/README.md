@@ -1,7 +1,82 @@
+# Setup
+In this example, we use conda and Python 3. 
 
-JupyterLab: https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906
+## Install Anaconda
+Download the 3.7 version of Anaconda from: https://www.anaconda.com/download
 
-Setup Juypter: https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html
+Anaconda already [ships with a bunch of packages](https://docs.anaconda.com/anaconda/packages/pkg-docs/), e.g.:
+ * ipywidgets
+ * jupyter and jupyterlab
+ * matplotlib
+ * numpy
+ * pandas
+ * scipy
+ * seaborn
+
+But: not plotly.
+
+## Conda Environments
+Best practice is to create an environment per project.  
+Some commands to manage environments from: https://conda.io/docs/user-guide/tasks/manage-environments.html
+```
+conda create --name test_env python                 ... create a python environment named test_env
+conda create --name jupyter_env jupyterlab python   ... create a python environment named jupyter_env with package jupyterlab
+conda create --name va_lab python
+
+conda activate test_env                             ... activate environment test_env
+conda env list                                      ... list all environments
+conda list                                          ... list all packages available in environment (!= packages shipped with anaconda)
+conda install numpy                                 ... install an additional package
+conda install --yes --file requirements.txt         ... install packages listed in a requirements file
+conda deactivate                                    ... leave conda enviroment
+conda env remove --name test_env                    ... remove an environment from disk
+```
+
+## Install JupyterLab
+If you prefer not to use Anaconda, find instructions at: https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html  
+
+# Usage
+Checkout this repo and change into the folder:
+```
+git clone https://github.com/keckelt/python-tutorial-VA2018.git
+cd python-tutorial-VA2018/
+```
+
+Create a new environemnt and install the packages needed in the tutorial:
+```
+conda create --name python-tutorial python
+conda activate python-tutorial
+conda install --yes --file requirements.txt 
+```
+
+To see plotly's FigureWidget we need to install add widget extensions.
+Check the version of your JupyterLab:
+```
+conda list
+```
+
+
+Check out which extension version is needed for your jupyterlab at: https://github.com/jupyter-widgets/ipywidgets/tree/master/packages/jupyterlab-manager#version-compatibility  
+Install the appropriate extension:
+```
+jupyter labextension install @jupyter-widgets/jupyterlab-manager@0.38
+```
+
+
+Launch Jupyterlab:
+```
+jupyter lab
+```
+Jupyter Lab should open a new tab with url http://localhost:8888/lab and display the tutorial files.
+
+
+
+
+
+
+
+
+Setup Juypter: 
 
 Setup Plotly: https://github.com/plotly/plotly.py#installation
 Jupyter Widgets JupyterLab Extension Versions: https://github.com/jupyter-widgets/ipywidgets/tree/master/packages/jupyterlab-manager 
