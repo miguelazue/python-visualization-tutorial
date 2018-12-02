@@ -15,7 +15,7 @@ Anaconda already [ships with a bunch of packages](https://docs.anaconda.com/anac
 
 But: not plotly.
 
-## Conda Environments
+### Conda Environments
 Best practice is to create an environment per project.  
 Some commands to manage environments from: https://conda.io/docs/user-guide/tasks/manage-environments.html
 ```
@@ -32,8 +32,12 @@ conda deactivate                                    ... leave conda enviroment
 conda env remove --name test_env                    ... remove an environment from disk
 ```
 
-## Install JupyterLab
+## Optional: JupyterLab
 If you prefer not to use Anaconda, find instructions at: https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html  
+
+### Plotly for Jupyterlab:
+You need to install Jupyter Lab extensions to display the widgets. See: https://github.com/plotly/plotly.py#jupyterlab-support-python-35
+
 
 # Usage
 Checkout this repo and change into the folder:
@@ -49,25 +53,12 @@ conda activate python-tutorial
 conda install --yes --file requirements.txt 
 ```
 
-To see plotly's FigureWidget we need to install add widget extensions.
-Check the version of your JupyterLab:
-```
-conda list
-```
 
-
-Check out which extension version is needed for your jupyterlab at: https://github.com/jupyter-widgets/ipywidgets/tree/master/packages/jupyterlab-manager#version-compatibility  
-Install the appropriate extension:
+Launch Jupyter :
 ```
-jupyter labextension install @jupyter-widgets/jupyterlab-manager@0.38
+jupyter notebook
 ```
-
-
-Launch Jupyterlab:
-```
-jupyter lab
-```
-Jupyter Lab should open a new tab with url http://localhost:8888/lab and display the tutorial files.
+Jupyter should open a new tab with url http://localhost:8888/lab and display the tutorial files.
 
 
 
