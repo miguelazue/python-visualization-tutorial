@@ -1,7 +1,0 @@
-#python dependencies
-numpy
-pandas
-seaborn
-sklearn
-plotly
-ipywidgets
