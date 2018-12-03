@@ -30,7 +30,6 @@ Some commands to manage environments from: https://conda.io/docs/user-guide/task
 ```
 conda create --name test_env python                 ... create a python environment named test_env
 conda create --name jupyter_env jupyterlab python   ... create a python environment named jupyter_env with package jupyterlab
-conda create --name va_lab python
 
 conda activate test_env                             ... activate environment test_env
 conda env list                                      ... list all environments
