@@ -9,4 +9,5 @@ plotly
 scikit-learn
 scipy
 seaborn
-vega_datasets
+vega
+
