@@ -1,7 +1,7 @@
 # Usage
 ## MyBinder
-Go to: https://mybinder.org/v2/gh/keckelt/python-tutorial-VA2018/master
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/keckelt/python-tutorial-VA2018/master)
+Go to: https://mybinder.org/v2/gh/JKU-ICG/python-visualization-tutorial/master
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JKU-ICG/python-visualization-tutorial/master)
 
 MyBinder installs the dependencies specified inside of the `requirements.txt` for you.
 
