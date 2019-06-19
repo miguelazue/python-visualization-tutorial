@@ -8,12 +8,12 @@ MyBinder installs the dependencies specified inside of the `requirements.txt` fo
 
 ## Locally
 ### Setup
-In this example, we use conda and Python 3. 
+In this example, we use Anaconda and Python 3. 
 
 #### Install Anaconda
 Download the 3.7 version of Anaconda from: https://www.anaconda.com/download
 
-Anaconda already [ships with a bunch of packages](https://docs.anaconda.com/anaconda/packages/pkg-docs/), e.g.:
+Anaconda is a package distribution that contains the *Conda* package manager, but also a bunch of [other frequently used packages](https://docs.anaconda.com/anaconda/packages/pkg-docs/), e.g.:
  * ipywidgets
  * jupyter and jupyterlab
  * matplotlib
@@ -22,7 +22,7 @@ Anaconda already [ships with a bunch of packages](https://docs.anaconda.com/anac
  * scipy
  * seaborn
 
-But: not plotly.
+But: not plotly, we will install it later.
 
 **Conda Environments**  
 Best practice is to create an environment per project.  
