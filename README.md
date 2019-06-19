@@ -29,7 +29,7 @@ Best practice is to create an environment per project.
 Some commands to manage environments from: https://conda.io/docs/user-guide/tasks/manage-environments.html
 ```
 conda create --name test_env python                 ... create a python environment named test_env
-conda create --name jupyter_env jupyterlab python   ... create a python environment named jupyter_env with package jupyterlab
+conda create --name jupyter_env jupyter python   ... create a python environment named jupyter_env with package jupyter
 
 conda activate test_env                             ... activate environment test_env
 conda env list                                      ... list all environments
@@ -39,14 +39,6 @@ conda install --yes --file requirements.txt         ... install packages listed 
 conda deactivate                                    ... leave conda enviroment
 conda env remove --name test_env                    ... remove an environment from disk
 ```
-
-#### Optional: JupyterLab
-If you prefer not to use Anaconda, find instructions at: https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html  
-
-**Plotly for Jupyterlab:**  
-You need to install Jupyter Lab extensions to display the widgets. See: https://github.com/plotly/plotly.py#jupyterlab-support-python-35
-
-
 
 ### Start
 Checkout this repo and change into the folder:
@@ -67,4 +59,4 @@ Launch Jupyter :
 ```
 jupyter notebook
 ```
-Jupyter should open a new tab with url http://localhost:8888/lab and display the tutorial files.
+Jupyter should open a new tab with url http://localhost:8888/ and display the tutorial files.
