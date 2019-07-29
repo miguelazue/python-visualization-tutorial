@@ -43,7 +43,7 @@ conda env remove --name test_env                    ... remove an environment fr
 ### Start
 Checkout this repo and change into the folder:
 ```
-git clone https://github.com/keckelt/python-tutorial-VA2018.git
+git clone https://github.com/JKU-ICG/python-visualization-tutorial.git
 cd python-tutorial-VA2018/
 ```
 
