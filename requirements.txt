@@ -10,4 +10,4 @@ scikit-learn
 scipy
 seaborn
 vega
-
+vega_datasets
