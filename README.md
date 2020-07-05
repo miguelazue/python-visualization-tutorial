@@ -44,7 +44,7 @@ conda env remove --name test_env                    ... remove an environment fr
 Checkout this repo and change into the folder:
 ```
 git clone https://github.com/JKU-ICG/python-visualization-tutorial.git
-cd python-tutorial-VA2018/
+cd python-visualization-tutorial/
 ```
 
 Create a new environemnt and install the packages needed in the tutorial:
