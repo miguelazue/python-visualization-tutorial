@@ -36,9 +36,12 @@ conda env list                                      ... list all environments
 conda list                                          ... list all packages available in environment (!= packages shipped with anaconda)
 conda install numpy                                 ... install an additional package
 conda install --yes --file requirements.txt         ... install packages listed in a requirements file
+python -m pip install <package>                     ... install a package not aviailable via conda, also see (†)
 conda deactivate                                    ... leave conda enviroment
 conda env remove --name test_env                    ... remove an environment from disk
 ```
+
+† See this article on [why you should prefer `python -m pip` over `pip`](https://snarky.ca/why-you-should-use-python-m-pip/).
 
 ### Start
 Checkout this repo and change into the folder:
