@@ -11,3 +11,4 @@ scipy
 seaborn
 vega
 vega_datasets
+nodejs
