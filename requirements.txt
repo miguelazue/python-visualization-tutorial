@@ -11,4 +11,3 @@ scipy
 seaborn
 vega
 vega_datasets
-jupyter_contrib_nbextensions
