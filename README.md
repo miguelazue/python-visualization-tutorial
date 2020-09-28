@@ -1,7 +1,7 @@
 # Usage
 ## MyBinder
-Go to: https://mybinder.org/v2/gh/JKU-ICG/python-visualization-tutorial/master
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JKU-ICG/python-visualization-tutorial/master)
+Go to: https://mybinder.org/v2/gh/JKU-ICG/python-visualization-tutorial/master?urlpath=lab
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JKU-ICG/python-visualization-tutorial/master?urlpath=lab)
 
 MyBinder installs the dependencies specified inside of the `requirements.txt` for you.
 
@@ -60,6 +60,6 @@ conda install -c conda-forge  --yes --file requirements.txt
 
 Launch Jupyter :
 ```
-jupyter notebook
+jupyter lab
 ```
 Jupyter should open a new tab with url http://localhost:8888/ and display the tutorial files.
