@@ -1,4 +1,9 @@
 # Usage
+ 
+This tutorial is based on [Jupyter Notebooks](http://jupyter.org/). Jupyter Notebook is a web-based Python development environment allowing you to combine documentation (markdown), code, and their results) into a single document. This follows a similar idea as [Mathematica](http://www.wolfram.com/mathematica/).
+
+JupyterLab is a web-based interactive development environment for Jupyter notebooks that adds a number of quality of life additions to working with notebooks.
+
 ## Binder
 Deploying Jupyter Notebooks is easy. [mybinder.org](http://mybinder.org) provides you with a free service that turns a Github repository into a collection of interactive notebooks that are accessible online.
 BY default, Binder will start a Jupyter Notebook environment. You can switch to JuypterLab by appending `?urlpath=lab` to the URL.
