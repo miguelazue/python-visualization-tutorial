@@ -55,7 +55,7 @@ cd python-visualization-tutorial/
 ```
 
 Create a new environemnt and install the packages needed in the tutorial.
-Some packages recquire to use [another channel](https://conda.io/docs/user-guide/tasks/manage-channels.html), so switch the channel to conda-forge](https://conda-forge.org/#about) using `-c`:
+Some packages recquire to use [another channel](https://conda.io/docs/user-guide/tasks/manage-channels.html), so switch the channel to [conda-forge](https://conda-forge.org/#about) using `-c`:
 
 ```
 conda create --name python-tutorial python
