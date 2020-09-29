@@ -7,10 +7,8 @@ nodejs>=10
 notebook
 numpy
 pandas
-plotly
 scikit-learn
 scipy
 seaborn
 vega
 vega_datasets
-nodejs
