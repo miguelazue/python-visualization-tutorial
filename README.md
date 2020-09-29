@@ -1,9 +1,12 @@
 # Usage
-## MyBinder
-Go to: https://mybinder.org/v2/gh/JKU-ICG/python-visualization-tutorial/master?urlpath=lab
+## Binder
+Deploying Jupyter Notebooks is easy. [mybinder.org](http://mybinder.org) provides you with a free service that turns a Github repository into a collection of interactive notebooks that are accessible online.
+BY default, Binder will start a Jupyter Notebook environment. You can switch to JuypterLab by appending `?urlpath=lab` to the URL.
+
+To launch JupyterLab environment for this tutorial, go to: https://mybinder.org/v2/gh/JKU-ICG/python-visualization-tutorial/master?urlpath=lab
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JKU-ICG/python-visualization-tutorial/master?urlpath=lab)
 
-MyBinder installs the dependencies specified inside of the `requirements.txt` for you.
+MyBinder installs the dependencies specified inside of the `requirements.txt` for you. We also add an extension to JupyterLab in the `postBuild` script file.
 
 
 ## Locally
@@ -13,16 +16,12 @@ In this example, we use Anaconda and Python 3.
 #### Install Anaconda
 Download the 3.7 version of Anaconda from: https://www.anaconda.com/download
 
-Anaconda is a package distribution that contains the *Conda* package manager, but also a bunch of [other frequently used packages](https://docs.anaconda.com/anaconda/packages/pkg-docs/), e.g.:
- * ipywidgets
- * jupyter and jupyterlab
- * matplotlib
- * numpy
- * pandas
- * scipy
- * seaborn
+Anaconda is a package distribution that contains the *Conda* package manager, but also a bunch of [other frequently used packages](https://docs.anaconda.com/anaconda/packages/pkg-docs/),.
 
-But: not plotly, we will install it later.
+We use different frameworks/libraries in this tutorial:
+ * [Numpy](http://www.numpy.org/) and [Pandas](http://pandas.pydata.org/) for data manipulation
+ * [Matplotlib](http://matplotlib.org/), [Seaborn](http://stanford.edu/~mwaskom/software/seaborn/), and [Altair](https://altair-viz.github.io/) for visualization
+ * [Scikit-learn](http://scikit-learn.org) for simple machine learning
 
 **Conda Environments**  
 Best practice is to create an environment per project.  
@@ -50,15 +49,21 @@ git clone https://github.com/JKU-ICG/python-visualization-tutorial.git
 cd python-visualization-tutorial/
 ```
 
-Create a new environemnt and install the packages needed in the tutorial:
+Create a new environemnt and install the packages needed in the tutorial.
+Some packages recquire to use [another channel](https://conda.io/docs/user-guide/tasks/manage-channels.html), so switch the channel to conda-forge](https://conda-forge.org/#about) using `-c`:
+
 ```
 conda create --name python-tutorial python
 conda activate python-tutorial
 conda install -c conda-forge  --yes --file requirements.txt 
 ```
 
+Install Jupyter Lab extension for ipywidgets:
+´´´
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+´´´
 
-Launch Jupyter :
+Launch JupyterLab:
 ```
 jupyter lab
 ```
