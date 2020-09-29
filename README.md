@@ -64,9 +64,9 @@ conda install -c conda-forge  --yes --file requirements.txt
 ```
 
 Install Jupyter Lab extension for ipywidgets:
-´´´
+```
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
-´´´
+```
 
 Launch JupyterLab:
 ```
