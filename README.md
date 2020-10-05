@@ -54,13 +54,9 @@ git clone https://github.com/JKU-ICG/python-visualization-tutorial.git
 cd python-visualization-tutorial/
 ```
 
-Create a new environemnt and install the packages needed in the tutorial.
-Some packages recquire to use [another channel](https://conda.io/docs/user-guide/tasks/manage-channels.html), so switch the channel to [conda-forge](https://conda-forge.org/#about) using `-c`:
-
+Load the conda environemnt from the shared `environment.yml` file:
 ```
-conda create --name python-tutorial python
-conda activate python-tutorial
-conda install -c conda-forge  --yes --file requirements.txt 
+conda env create -f environment.yml
 ```
 
 Install Jupyter Lab extension for ipywidgets:
