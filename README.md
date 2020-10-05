@@ -54,9 +54,14 @@ git clone https://github.com/JKU-ICG/python-visualization-tutorial.git
 cd python-visualization-tutorial/
 ```
 
-Load the conda environemnt from the shared `environment.yml` file:
+Load the conda environment from the shared `environment.yml` file:
 ```
 conda env create -f environment.yml
+```
+
+Activate the loaded conda environment:
+```
+conda activate python-tutorial
 ```
 
 Install Jupyter Lab extension for ipywidgets:
