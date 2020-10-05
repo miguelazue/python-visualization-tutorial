@@ -1,4 +1,4 @@
-name: python-tutorial-env-test
+name: python-tutorial
 channels:
   - conda-forge
   - defaults
