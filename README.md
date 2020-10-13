@@ -19,7 +19,7 @@ MyBinder installs the dependencies specified inside of the `requirements.txt` fo
 In this example, we use Anaconda and Python 3. 
 
 #### Install Anaconda
-Download the 3.7 version of Anaconda from: https://www.anaconda.com/download
+Download the _Individual/Open Source Edition_ of Anaconda from: https://www.anaconda.com/download
 
 Anaconda is a package distribution that contains the *Conda* package manager, but also a bunch of [other frequently used packages](https://docs.anaconda.com/anaconda/packages/pkg-docs/),.
 
