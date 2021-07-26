@@ -11,7 +11,7 @@ BY default, Binder will start a Jupyter Notebook environment. You can switch to 
 To launch JupyterLab environment for this tutorial, go to: https://mybinder.org/v2/gh/JKU-ICG/python-visualization-tutorial/master?urlpath=lab
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JKU-ICG/python-visualization-tutorial/master?urlpath=lab)
 
-MyBinder installs the dependencies specified inside of the `requirements.txt` for you. We also add an extension to JupyterLab in the `postBuild` script file.
+MyBinder installs the dependencies specified inside of the `environment.yml` for you. We also add an extension to JupyterLab in the `postBuild` script file.
 
 
 ## Locally
