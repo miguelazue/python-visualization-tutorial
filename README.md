@@ -6,9 +6,9 @@ JupyterLab is a web-based interactive development environment for Jupyter notebo
 
 ## Binder
 Deploying Jupyter Notebooks is easy. [mybinder.org](http://mybinder.org) provides you with a free service that turns a Github repository into a collection of interactive notebooks that are accessible online.
-BY default, Binder will start a Jupyter Notebook environment. You can switch to JuypterLab by appending `?urlpath=lab` to the URL.
+By default, Binder will start a Jupyter Notebook environment. You can switch to JuypterLab by appending `?urlpath=lab` to the URL.
 
-To launch JupyterLab environment for this tutorial, go to: https://mybinder.org/v2/gh/JKU-ICG/python-visualization-tutorial/master?urlpath=lab
+To launch a JupyterLab environment for this tutorial, go to: https://mybinder.org/v2/gh/JKU-ICG/python-visualization-tutorial/master?urlpath=lab
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JKU-ICG/python-visualization-tutorial/master?urlpath=lab)
 
 MyBinder installs the dependencies specified inside of the `environment.yml` for you. We also add an extension to JupyterLab in the `postBuild` script file.
